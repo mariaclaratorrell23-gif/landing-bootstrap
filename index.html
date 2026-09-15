@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+  .btn-hero {
+    background-color: #42ddf1;
+    border-color: #1edbdb;
+    color: white;
+  }
+</style>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -37,7 +44,10 @@
     <h1 class="display-4 fw-bold mb-3">O Café Perfeito para o seu Dia</h1>
     <p class="lead text-muted mb-4">Grãos selecionados e torrados artesanalmente para despertar os seus melhores momentos.</p>
     <!--O Bootstrap definiu 38 propiedades CSS para o botão-->
-    <a href="#cardapio" class="btn btn-primary btn-lg">Ver cardápio</a>
+    <!--Está depois do link do Bootstrap pois, em caso de empate entre as regras, minha regra seja aplicada
+    depois da regra do Bootstrap na folha de estilos.
+-->
+    <a href="#cardapio" class="btn btn-primary btn-lg btn-hero">Ver cardápio</a>
   </div>
 </header>
 <!--Classe utilizada: col-md-4
